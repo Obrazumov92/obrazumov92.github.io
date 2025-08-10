@@ -1,0 +1,251 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Елена Образумова — йога, авторские яхтенные туры, тревел‑агент</title>
+  <meta name="description" content="Я — Елена Образумова: йога‑терапевт женского здоровья. Организую авторские яхтенные туры и помогу спланировать любое путешествие. Связь: Telegram @Elena_Obrazumova, WhatsApp +7 910 887‑69‑44" />
+  <meta property="og:title" content="Елена Образумова — йога, авторские яхтенные туры, тревел‑агент" />
+  <meta property="og:description" content="Йога для женщин, яхтенные туры под ключ, помощь с визами и бронированиями. Связаться: WhatsApp и Telegram." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://i.imgur.com/FRTrxVq.jpg" />
+  <meta name="theme-color" content="#F7FAFC" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#F7FAFC;            /* светлый воздушный фон */
+      --card:#FFFFFF;          /* белые карточки */
+      --text:#1F2937;          /* тёмный текст */
+      --muted:#667085;         /* вторичный текст */
+      --accent:#10B981;        /* мятный зелёный */
+      --accent-2:#60A5FA;      /* небесно-голубой */
+      --border:#E5E7EB;        /* светлая рамка */
+      --maxw:1100px;
+      --radius:18px;
+      --shadow:0 8px 24px rgba(16,24,40,.08);
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0;background:var(--bg);color:var(--text);font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;}
+    a{color:inherit}
+    .container{max-width:var(--maxw);margin:0 auto;padding:24px}
+    .hero{position:relative;overflow:hidden;border-radius:calc(var(--radius) + 6px);background:
+      radial-gradient(1200px 600px at -10% -20%, rgba(16,185,129,.12), transparent 60%),
+      radial-gradient(900px 500px at 110% -10%, rgba(96,165,250,.14), transparent 55%),
+      linear-gradient(180deg, #ffffff 0%, #F2F6FB 100%);
+      padding:28px;display:grid;gap:20px;align-items:center;grid-template-columns:140px 1fr;box-shadow:var(--shadow);border:1px solid var(--border);
+    }
+    .hero img.avatar{width:140px;height:140px;border-radius:100%;object-fit:cover;border:none;background:#fff}
+    .hero h1{font-size:28px;margin:0 0 6px 0;line-height:1.2}
+    .hero p{margin:0;color:var(--muted)}
+    .badges{display:flex;flex-wrap:wrap;gap:10px;margin-top:12px}
+    .badge{font-size:12px;padding:6px 12px;border-radius:999px;background:#F8FAFC;border:1px solid var(--border);display:inline-flex;align-items:center;gap:8px}
+    .actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:16px}
+    .btn{display:inline-flex;align-items:center;gap:8px;padding:10px 14px;border-radius:12px;border:1px solid var(--border);background:#fff;color:var(--text);text-decoration:none;font-weight:600}
+    .btn:hover{transform:translateY(-1px);box-shadow:0 6px 16px rgba(16,24,40,.08)}
+    .btn.primary{background:linear-gradient(135deg,var(--accent),var(--accent-2));color:#ffffff;border:none}
+
+    /* Выравнивание кнопок внизу карточек */
+    .card .actions{margin-top:auto}
+    .card .actions.lift1{margin-bottom:1em}
+
+    section{margin-top:36px}
+    .section-title{font-size:22px;margin:0 0 14px 0}
+    .grid{display:grid;gap:18px}
+    @media (min-width:760px){.grid{grid-template-columns:repeat(3,1fr)}}
+    .card{background:var(--card);border-radius:var(--radius);padding:18px;box-shadow:var(--shadow);display:flex;flex-direction:column;gap:12px;min-height:260px;border:1px solid var(--border)}
+    .card h3{margin:0 0 6px 0}
+    .card p{margin:0;color:var(--text)}
+    .card .meta{color:var(--muted);font-size:14px}
+    .card .cover{border-radius:12px;overflow:hidden;background:#EAF2F7;border:1px solid var(--border);position:relative;aspect-ratio:4 / 3;}
+    .card .cover img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block;filter:saturate(1.05)}
+
+    .reviews{display:grid;gap:16px}
+    @media (min-width:760px){.reviews{grid-template-columns:repeat(3,1fr)}}
+    .review{background:var(--card);border-radius:16px;padding:16px;box-shadow:var(--shadow);min-height:170px;border:1px solid var(--border)}
+    .stars{font-size:16px;letter-spacing:2px;color:#F59E0B}
+    .review p{margin:8px 0 0 0;color:var(--text)}
+    .review .who{margin-top:10px;color:var(--muted);font-size:14px}
+
+    .contact{display:grid;gap:14px;background:linear-gradient(180deg,#FFFFFF,#F7FAFC);border-radius:var(--radius);padding:18px;box-shadow:var(--shadow);border:1px solid var(--border)}
+    @media (min-width:760px){.contact{grid-template-columns:1.2fr .8fr;align-items:center}}
+
+    footer{margin:32px 0 50px 0;color:var(--muted);text-align:center;font-size:14px}
+
+    .badge .emoji{font-size:16px;line-height:1}
+
+    .card .cover.portrait{aspect-ratio:3 / 4;background:#F2F6FB}
+    .card .cover.portrait img{object-fit:contain;padding:8px}
+
+    .spacer-line{height:1em}
+
+    .contact-rows{display:grid;grid-template-columns:1fr auto;gap:10px 14px;align-items:center;margin-top:12px}
+    .contact-item{color:var(--muted)}
+
+    .contact .qrbox{justify-self:end;text-align:center;background:#fff;border:1px solid var(--border);border-radius:16px;padding:12px;box-shadow:var(--shadow)}
+    .contact .qr{width:220px;height:220px;display:block;border-radius:12px}
+    .contact .qr-title{font-weight:600;margin-bottom:8px}
+    .contact .qr-sub{color:var(--muted);font-size:12px;margin-top:8px}
+    @media (max-width:759px){.contact .qrbox{justify-self:stretch}.contact .qr{margin:0 auto}}
+
+    /* Небольшие утилиты */
+    .muted{color:var(--muted)}
+    .sep{opacity:.5;margin:0 6px}
+    .nowrap{white-space:nowrap}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- HERO -->
+    <header class="hero">
+      <!-- Фото профиля: используем файл elena-avatar.jpg рядом с index.html -->
+      <img class="avatar" src="https://i.imgur.com/FRTrxVq.jpg" alt="Елена Образумова — фото профиля">
+      <div>
+        <h1>Елена Образумова</h1>
+        <p>Йога‑терапевт женского здоровья. Организую авторские йога‑туры на яхтах и в горах. Помогаю спланировать любые путешествия по выгодным ценам.</p>
+        <div class="badges">
+          <span class="badge"><span class="emoji" aria-hidden="true">🧘‍♀️</span> Йогатерапия женского здоровья</span>
+          <span class="badge"><span class="emoji" aria-hidden="true">⛵️</span> Авторские туры</span>
+          <span class="badge"><span class="emoji" aria-hidden="true">✈️</span> Турагент: визы и бронирования</span>
+        </div>
+        </div>
+    </header>
+
+    <!-- SERVICES -->
+    <section>
+      <h2 class="section-title">Чем я занимаюсь</h2>
+      <div class="grid">
+        <!-- Yoga -->
+        <article class="card" data-card="yoga">
+          <div class="cover">
+            <img data-cover="yoga" src="https://i.imgur.com/IBWydxX.jpg" alt="Йога — обложка"
+                 onerror="if(this.dataset.fbk==='1'){this.onerror=null;this.src='https://i.imgur.com/IBWydxX.jpeg';}else{this.dataset.fbk='1';this.src='https://i.imgur.com/IBWydxX.png';}">
+          </div>
+          <h3>Йога для женщин</h3>
+          <p>Веду мягкие и безопасные практики, основанные на физиотерапии и анатомии. Помогаю наладить дыхание, восстановиться после родов, снять напряжение и улучшить осанку. Регулярные классы и разборы — в моём Telegram‑канале.</p>
+          <div class="actions">
+            <a class="btn" href="https://t.me/gurusyoga" target="_blank" rel="noopener">Перейти в канал</a>
+          </div>
+        </article>
+
+        <!-- Yacht Tours -->
+        <article class="card" data-card="tours">
+          <div class="cover portrait">
+            <img data-cover="tours" src="https://i.imgur.com/Njcos9z.jpg" alt="Авторские йога‑туры — обложка"
+                 onerror="if(this.dataset.fbk==='1'){this.onerror=null;this.src='https://i.imgur.com/Njcos9z.jpeg';}else{this.dataset.fbk='1';this.src='https://i.imgur.com/Njcos9z.png';}">
+          </div>
+          <h3>Авторские йога‑туры</h3>
+          <p>Организую авторские йога‑туры «под ключ» — на яхтах и в горах: утренние практики на природе, треккинги, SUP и другие активности, увлекательная программа и тёплая компания единомышленников. Маршрут, безопасность и питание беру на себя.</p>
+          <p class="meta"><a href="http://obraz.e.tilda.ws/neregatayachtazdorovye" target="_blank" rel="noopener">Смотреть пример тура</a></p>
+          <div class="actions">
+            <a class="btn" href="https://t.me/yachta_travel" target="_blank" rel="noopener">Канал про туры</a>
+          </div>
+        </article>
+
+        <!-- Travel Agent -->
+        <article class="card">
+          <div class="cover">
+            <img src="https://i.imgur.com/PXHZJ4m.jpg" alt="Паспорта, визы и бронирования"
+                 onerror="if(this.dataset.fbk==='1'){this.onerror=null;this.src='https://i.imgur.com/PXHZJ4m.jpeg';}else{this.dataset.fbk='1';this.src='https://i.imgur.com/PXHZJ4m.png';}">
+          </div>
+          <h3>Туристический агент</h3>
+          <p>Соберу под вас путешествие вашей мечты: перелёты, отели, страховки, визы и бронирования. Люблю сложные маршруты и бюджетную оптимизацию. На связи 7 дней в неделю — пишите, обсудим задачу.</p>
+          <div class="actions">
+            <a class="btn" href="https://t.me/Elena_Obrazumova" target="_blank" rel="noopener">Написать в Telegram</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- REVIEWS -->
+    <section>
+      <h2 class="section-title">Что говорят путешественники</h2>
+      <div class="reviews">
+        <div class="review">
+          <div class="stars">★★★★★</div>
+          <p>«Лена, дорогая, благодарю тебя за наш тур в мае 2024 года. Это было поистине лучшее путешествие в моей жизни. Яхта, море, неизведанная Турция... Ты открыла для нас новый вид отдыха. С такой заботой и комфортом, как никогда в моей жизни ранее. Благодарю от всего сердца!»</p>
+          <div class="who">— Маргарита</div>
+        </div>
+        <div class="review">
+          <div class="stars">★★★★★</div>
+          <p>«Это был не просто отдых с прекрасным питанием, прогулками, красотой мира, о камерном отдыхе, об окружении, о комфорте. Да, такое тоже есть и это доступно! Это путешествие было о возможностях! О расширении мировосприятия, о расширении границ взаимодействия с миром. Теперь я знаю: если отдых, то на яхте.»</p>
+          <div class="who">— Елена</div>
+        </div>
+        <div class="review">
+          <div class="stars">★★★★★</div>
+          <p>«Благодарю за невероятное приключение, которое я пережила в апреле этого года. Каждый день я чувствовала себя настоящей королевой: внимание, забота и уход персонала были на высшем уровне. Вкусное меню, потрясающая природа — всё это сделало путешествие особенным. Но самое главное — люди, с которыми я разделила эти незабываемые моменты. Каждая деталь была продумана до мелочей — спасибо вам за это!»</p>
+          <div class="who">— Алтынай</div>
+        </div>
+      </div>
+      <p class="muted" style="margin-top:10px">Больше отзывов и фото: <a href="http://obraz.e.tilda.ws/neregatayachtazdorovye" target="_blank" rel="noopener">страница тура на Tilda</a>.</p>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="contact">
+      <div>
+        <h2 class="section-title">Связаться со мной</h2>
+        <p>Предпочитаю общаться в Telegram — отвечаю оперативно. Кратко напишите: йога/тур/путешествие, даты и бюджет (если есть). Я предложу варианты и шаги.</p>
+
+        <div class="contact-rows">
+          <div class="contact-item">Telegram: <a href="https://t.me/Elena_Obrazumova" target="_blank" rel="noopener">@Elena_Obrazumova</a></div>
+          <div><a class="btn primary" href="https://t.me/Elena_Obrazumova" target="_blank" rel="noopener">Написать</a></div>
+
+          <div class="contact-item">WhatsApp: <a href="https://wa.me/79108876944" target="_blank" rel="noopener">+7 910 887‑69‑44</a></div>
+          <div><a class="btn" href="https://wa.me/79108876944" target="_blank" rel="noopener">Написать</a></div>
+
+          <div class="contact-item">Instagram: <a href="https://www.instagram.com/elena_obraz/" target="_blank" rel="noopener">@elena_obraz</a></div>
+          <div><a class="btn" href="https://www.instagram.com/elena_obraz/" target="_blank" rel="noopener">Открыть</a></div>
+        </div>
+      </div>
+      <div class="qrbox">
+        <div class="qr-title">Откройте мой Telegram</div>
+        <a href="https://t.me/Elena_Obrazumova" target="_blank" rel="noopener">
+          <img class="qr" src="https://api.qrserver.com/v1/create-qr-code/?size=260x260&data=https%3A%2F%2Ft.me%2FElena_Obrazumova" alt="QR — Telegram @Elena_Obrazumova"
+               onerror="if(this.dataset.fbk==='1'){this.onerror=null;this.src='https://chart.googleapis.com/chart?chs=260x260&cht=qr&chl=https%3A%2F%2Ft.me%2FElena_Obrazumova'}else{this.dataset.fbk='1';this.src='https://quickchart.io/qr?size=260&text=https%3A%2F%2Ft.me%2FElena_Obrazumova';}">
+        </a>
+        <div class="qr-sub">Сканируйте камерой</div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="muted">© <span id="year"></span> Елена Образумова. Йога • Туры • Путешествия. Все права защищены.</div>
+    </footer>
+  </div>
+
+  <script>
+  // Год в подвале
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+  // Аватар: параметр ?avatar= приоритетнее прямой ссылки, плюс fallback по расширениям
+  const imgEl = document.querySelector('img.avatar');
+  const params = new URLSearchParams(location.search);
+  const avatarUrl = params.get('avatar');
+  if (avatarUrl) imgEl.src = avatarUrl;
+  const base = 'https://i.imgur.com/FRTrxVq';
+  const exts = ['.jpg','.png','.jpeg'];
+  let idx = 0;
+  function tryNext(){
+    if (idx >= exts.length) return;
+    imgEl.onerror = () => { idx++; tryNext(); };
+    imgEl.src = base + exts[idx];
+  }
+  if (!avatarUrl) tryNext();
+
+  // Каверы услуг: авто-режим для вертикальных фото
+  document.querySelectorAll('.card .cover').forEach((cover)=>{
+    const img = cover.querySelector('img');
+    if (!img) return;
+    const apply = () => {
+      if (img.naturalHeight > img.naturalWidth) {
+        cover.classList.add('portrait');
+      } else {
+        cover.classList.remove('portrait');
+      }
+    };
+    if (img.complete) apply();
+    img.addEventListener('load', apply);
+  });
+</script>
+</body>
+</html>
