@@ -8,7 +8,7 @@
   <meta property="og:title" content="Елена Образумова — йога, авторские яхтенные туры, тревел‑агент" />
   <meta property="og:description" content="Йога для женщин, яхтенные туры под ключ, помощь с визами и бронированиями. Связаться: WhatsApp и Telegram." />
   <meta property="og:type" content="website" />
-  <meta property="og:image" content="https://i.imgur.com/FRTrxVq.jpg" />
+  <meta property="og:image" content="img/avatar.jpg" />
   <meta name="theme-color" content="#F7FAFC" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -87,7 +87,17 @@
     .contact .qr{width:220px;height:220px;display:block;border-radius:12px}
     .contact .qr-title{font-weight:600;margin-bottom:8px}
     .contact .qr-sub{color:var(--muted);font-size:12px;margin-top:8px}
-    @media (max-width:759px){.contact .qrbox{justify-self:stretch}.contact .qr{margin:0 auto}}
+    @media (max-width:759px){
+    .container{padding:16px}
+    .hero{grid-template-columns:1fr; padding:16px; gap:12px; align-items:start; overflow:visible}
+    .hero img.avatar{width:96px;height:96px}
+    .hero h1{font-size:22px}
+    .hero p{font-size:15px; line-height:1.5; overflow-wrap:anywhere}
+    .badges{gap:8px}
+    .badge{font-size:11px;padding:6px 10px}
+    .contact .qrbox{justify-self:stretch}
+    .contact .qr{margin:0 auto}
+  }
 
     /* Небольшие утилиты */
     .muted{color:var(--muted)}
@@ -100,7 +110,7 @@
     <!-- HERO -->
     <header class="hero">
       <!-- Фото профиля: используем файл elena-avatar.jpg рядом с index.html -->
-      <img class="avatar" src="https://i.imgur.com/FRTrxVq.jpg" alt="Елена Образумова — фото профиля">
+      <img class="avatar" src="img/avatar.jpg" alt="Елена Образумова — фото профиля">
       <div>
         <h1>Елена Образумова</h1>
         <p>Йога‑терапевт женского здоровья. Организую авторские йога‑туры на яхтах и в горах. Помогаю спланировать любые путешествия по выгодным ценам.</p>
@@ -119,11 +129,10 @@
         <!-- Yoga -->
         <article class="card" data-card="yoga">
           <div class="cover">
-            <img data-cover="yoga" src="https://i.imgur.com/IBWydxX.jpg" alt="Йога — обложка"
-                 onerror="if(this.dataset.fbk==='1'){this.onerror=null;this.src='https://i.imgur.com/IBWydxX.jpeg';}else{this.dataset.fbk='1';this.src='https://i.imgur.com/IBWydxX.png';}">
+            <img data-cover="yoga" src="img/yoga_women.jpg" alt="Йога — обложка">
           </div>
-          <h3>Йога для женщин</h3>
-          <p>Веду мягкие и безопасные практики, основанные на физиотерапии и анатомии. Помогаю наладить дыхание, восстановиться после родов, снять напряжение и улучшить осанку. Регулярные классы и разборы — в моём Telegram‑канале.</p>
+          <h3>Йога онлайн</h3>
+          <p>Веду мягкие и безопасные практики, основанные на йога‑терапевтическом подходе под конкретную задачу (йога для беременных, здоровая спина, правильная осанка, функциональность мышц тазового дна и другие). Восстанавливаю энергетический и эмоциональный ресурс дыхательными практиками и Йогой Леди Нигума. Регулярные классы — в моём Telegram‑канале.</p>
           <div class="actions">
             <a class="btn" href="https://t.me/gurusyoga" target="_blank" rel="noopener">Перейти в канал</a>
           </div>
@@ -132,11 +141,10 @@
         <!-- Yacht Tours -->
         <article class="card" data-card="tours">
           <div class="cover portrait">
-            <img data-cover="tours" src="https://i.imgur.com/Njcos9z.jpg" alt="Авторские йога‑туры — обложка"
-                 onerror="if(this.dataset.fbk==='1'){this.onerror=null;this.src='https://i.imgur.com/Njcos9z.jpeg';}else{this.dataset.fbk='1';this.src='https://i.imgur.com/Njcos9z.png';}">
+            <img data-cover="tours" src="img/tours_cover.jpg" alt="Авторские йога‑туры — обложка">
           </div>
-          <h3>Авторские йога‑туры</h3>
-          <p>Организую авторские йога‑туры «под ключ» — на яхтах и в горах: утренние практики на природе, треккинги, SUP и другие активности, увлекательная программа и тёплая компания единомышленников. Маршрут, безопасность и питание беру на себя.</p>
+          <h3>Авторские туры</h3>
+          <p>Организую авторские йога‑туры «под ключ» — на яхтах в Турции и в горах. Утренние практики на природе, хайкинг, SUP и другие активности, увлекательная программа и тёплая компания единомышленников. Помогу организовать тематические плавучие конференции и встречи международных сообществ.</p>
           <p class="meta"><a href="http://obraz.e.tilda.ws/neregatayachtazdorovye" target="_blank" rel="noopener">Смотреть пример тура</a></p>
           <div class="actions">
             <a class="btn" href="https://t.me/yachta_travel" target="_blank" rel="noopener">Канал про туры</a>
@@ -146,11 +154,10 @@
         <!-- Travel Agent -->
         <article class="card">
           <div class="cover">
-            <img src="https://i.imgur.com/PXHZJ4m.jpg" alt="Паспорта, визы и бронирования"
-                 onerror="if(this.dataset.fbk==='1'){this.onerror=null;this.src='https://i.imgur.com/PXHZJ4m.jpeg';}else{this.dataset.fbk='1';this.src='https://i.imgur.com/PXHZJ4m.png';}">
+            <img src="img/agent_cover.jpg" alt="Паспорта, визы и бронирования">
           </div>
-          <h3>Туристический агент</h3>
-          <p>Соберу под вас путешествие вашей мечты: перелёты, отели, страховки, визы и бронирования. Люблю сложные маршруты и бюджетную оптимизацию. На связи 7 дней в неделю — пишите, обсудим задачу.</p>
+          <h3>Путешествия по всему миру</h3>
+          <p>Как туристический эксперт соберу под вас путешествие вашей мечты! Любые направления и бюджет, поддержка агентства «Global Voyage» 7 дней в неделю. О нашем консьерж‑сервисе на отдыхе ходят легенды.</p>
           <div class="actions">
             <a class="btn" href="https://t.me/Elena_Obrazumova" target="_blank" rel="noopener">Написать в Telegram</a>
           </div>
@@ -201,8 +208,7 @@
       <div class="qrbox">
         <div class="qr-title">Откройте мой Telegram</div>
         <a href="https://t.me/Elena_Obrazumova" target="_blank" rel="noopener">
-          <img class="qr" src="https://api.qrserver.com/v1/create-qr-code/?size=260x260&data=https%3A%2F%2Ft.me%2FElena_Obrazumova" alt="QR — Telegram @Elena_Obrazumova"
-               onerror="if(this.dataset.fbk==='1'){this.onerror=null;this.src='https://chart.googleapis.com/chart?chs=260x260&cht=qr&chl=https%3A%2F%2Ft.me%2FElena_Obrazumova'}else{this.dataset.fbk='1';this.src='https://quickchart.io/qr?size=260&text=https%3A%2F%2Ft.me%2FElena_Obrazumova';}">
+          <img class="qr" src="img/telegram_qr.png" alt="QR — Telegram @Elena_Obrazumova">
         </a>
         <div class="qr-sub">Сканируйте камерой</div>
       </div>
@@ -222,15 +228,7 @@
   const params = new URLSearchParams(location.search);
   const avatarUrl = params.get('avatar');
   if (avatarUrl) imgEl.src = avatarUrl;
-  const base = 'https://i.imgur.com/FRTrxVq';
-  const exts = ['.jpg','.png','.jpeg'];
-  let idx = 0;
-  function tryNext(){
-    if (idx >= exts.length) return;
-    imgEl.onerror = () => { idx++; tryNext(); };
-    imgEl.src = base + exts[idx];
-  }
-  if (!avatarUrl) tryNext();
+  
 
   // Каверы услуг: авто-режим для вертикальных фото
   document.querySelectorAll('.card .cover').forEach((cover)=>{
